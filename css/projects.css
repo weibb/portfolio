@@ -1,0 +1,94 @@
+/* ==========================================================================
+   Project Page
+   ========================================================================== */
+
+.project {
+    margin: auto;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+   }
+
+.title{
+   z-index: 1;
+   pointer-events: none;
+   position: fixed;
+   align-self: flex-start;
+   color: rgba(101, 255, 40, 1);
+   font-size: 10vw;
+   line-height: 10vw;
+   margin: 1vh 0 0 0;
+   transition: all .5s ease-out;
+}
+
+.title_w{
+   color: rgba(0, 0, 0, 0.5);
+   font-size: 6vw;
+   margin: -3vh 0 0 0;
+   padding: 0;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    left:0;
+    width: 80vw;
+    margin: calc(8rem + 8vw) calc(5rem + 8vw) calc(5rem + 8vw) calc(5rem + 8vw);
+}
+
+.top img {
+    width: 60%;
+}
+
+.focus-h {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: calc(2rem + 8vw) 0;
+    z-index: 2;
+    width: 100vw;
+}
+
+.focus-c {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: calc(2rem + 8vw) 0;
+    z-index: 2;
+    width: 100vw;
+}
+
+.focus-c img {
+    width: 50%;
+}
+
+.text {
+    flex-grow: 1;
+    padding: 0 3rem 0 calc(5rem + 8vw);
+    width: 35%;
+}
+
+.img {
+    flex-grow: 2;
+    padding: 0;
+    width: 65%;
+}
+
+#section2 {
+        background-color: rgba(101, 255, 40, 0.85);
+}
+
+#section3 {
+        background-color: rgba(0, 0, 0, 0.85);
+}
+
+#section4 {
+        background-color: rgba(0, 0, 0, 0.08);
+}

@@ -1,111 +1,192 @@
-/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
+body {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+h1 {
+   font-weight: 700;
+   font-family: 'KoHo', sans-serif;
+   margin: 0
 }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+p {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.175rem;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 
 .site {
     width: 100%;
-    height: 101vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow-y: scroll;
 }
 
+#wwname {
+    position: fixed;
+    z-index: -10;
+    margin: 5vh 0;
+}
+
+#wwname h1 {
+    color: yellow;
+    font-size: 30vh;
+    line-height: 20vh;
+}
+
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+.nav.left {
+    top: 0;
+    left: 0;
+    position: fixed;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    margin: calc(50vh - 3rem) 3rem 3rem calc(1rem + 4.5vw);
+    text-align: center;
+    height: 10vh;
+    z-index: 1000;
+}
+
+.nav.right {
+    top: 0;
+    right: 0;
+    position: fixed;
+    /* -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); */
+    margin: 3rem;
+    padding: 0.8rem 1rem 0 1rem;
+    text-align: center;
+    height: 10vh;
+    z-index: 1000;
+}
+
+.nav.left p {
+    padding: 0.8rem 1rem;
+}
+
+.nav.right:hover,
+.nav.left p:hover {
+    background-color: yellow;
+}
+
+.nav p a {
+    color: #000;
+    font-family: 'KoHo', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    text-shadow: 0 0 1em blue;
+}
+
+.nav p a:hover {
+    color: red;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 80%;
+    padding: 10%;
+}
+
+.footer .right {
+    text-align: right;
+}
+
+.footer .left,
+.footer .right {
+    flex-grow: 1;
+}
+
+/* ==========================================================================
+   Info & Contact
+   ========================================================================== */
+
+.info,
+.contact {
+    cursor: pointer;
+}
+
+#info,
+#contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 80%;
+    padding: 10%;
+    position: fixed;
+    display: none;
+    background-color: yellow;
+}
+
+#info {
+    top: 0;
+    height: 100vh;
+    z-index: 100;
+}
+
+#contact {
+    bottom: 0;
+    z-index: 150;
+}
+
+#info .right,
+#contact .right {
+    text-align: right;
+}
+
+#info .left,
+#info .right,
+#contact .left,
+#contact .right {
+    flex-grow: 1;
+}
+
+/* ==========================================================================
+   Front Page
+   ========================================================================== */
+
+#front {
+    height: 100vh;
+   }
+
 .frontPage {
-    width: 95%;
+    width: 80%;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -119,47 +200,60 @@ textarea {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
 #row1.translator {
     transition: all 1s ease;
-    -webkit-transform:translate(0px,25px);
-    -moz-transform:translate(0px,-25px);
-    -ms-transform:translate(0px,-25px);
-    -o-transform:translate(0px,25px);
-    transform:translate(0px,-25px);
+    -webkit-transform:translate(0px,2vh);
+    -moz-transform:translate(0px,-2vh);
+    -ms-transform:translate(0px,-2vh);
+    -o-transform:translate(0px,2vh);
+    transform:translate(0px,-2vh);
+    transition-delay: 0.25s
 }
 
 #row3.translator2 {
     transition: all 1s ease;
-    -webkit-transform:translate(0px,-25px);
-    -moz-transform:translate(0px,25px);
-    -ms-transform:translate(0px,25px);
-    -o-transform:translate(0px,-25px);
-    transform:translate(0px,25px);
+    -webkit-transform:translate(0px,-2vh);
+    -moz-transform:translate(0px,2vh);
+    -ms-transform:translate(0px,2vh);
+    -o-transform:translate(0px,-2vh);
+    transform:translate(0px,2vh);
+    transition-delay: 0.25s
 }
 
 #row1 {
     transition: all 1s ease;
-    -webkit-transform:translate(0px,-100px);
-    -moz-transform:translate(0px,100px);
-    -ms-transform:translate(0px,100px);
-    -o-transform:translate(0px,-100px);
-    transform:translate(0px,100px);
+    -webkit-transform:translate(0px,-7vh);
+    -moz-transform:translate(0px,7vh);
+    -ms-transform:translate(0px,7vh);
+    -o-transform:translate(0px,-7vh);
+    transform:translate(0px,7vh);
+    transition-delay: 0.25s
 }
 
 #row3 {
     transition: all 1s ease;
-    -webkit-transform:translate(0px,100px);
-    -moz-transform:translate(0px,-100px);
-    -ms-transform:translate(0px,-100px);
-    -o-transform:translate(0px,100px);
-    transform:translate(0px,-100px);
+    -webkit-transform:translate(0px,7vh);
+    -moz-transform:translate(0px,-7vh);
+    -ms-transform:translate(0px,-7vh);
+    -o-transform:translate(0px,7vh);
+    transform:translate(0px,-7vh);
+    transition-delay: 0.25s
 }
 
-.frontObject{}
+.frontObject{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.frontObject.empty {
+    width: 10vw;
+}
 
 * {
   margin: 0;
@@ -167,227 +261,154 @@ textarea {
   border: 0;
 }
 
-/* relevant styles */
+/* ==========================================================================
+   Image Thumbnails
+   ========================================================================== */
+
 .img__wrap {
   position: relative;
   height: inherit;
-  width: inherit;
+  width: 20vw;
+  transition: all 1s ease;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.img__wrap img {
+  width: calc(85% + 1vw);
+  height: auto;
 }
 
 .img__description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(29, 106, 154, 0.72);
+  width: calc(85% + 1vw);
+  height: auto;
+  background: rgba(103, 116, 255, 0.75);
   color: #fff;
-  visibility: hidden;
   opacity: 0;
-
-  /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
+  transition: opacity .25s, visibility .25s;
+  font-family: 'KoHo', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
 }
 
-.img__wrap:hover .img__description {
-  visibility: visible;
+.img__wrap:hover {
+    width: 25vw;
+    height: auto;
+}
+
+.img__description:hover {
   opacity: 1;
 }
 
-.nav.left {
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    margin-left: 3rem;
-}
+@media screen and (max-width: 1000px) {
+    .img__wrap {
+        width: 24vw;
+        margin: 0.3vw;
+    }
 
-.nav.right {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    margin-right: 3rem;
+    .img__wrap:hover {
+        width: 32vw;
+    }
+
 }
 
 
+@media screen and (max-width: 640px) {
+    body {
 
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-    display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
     }
 
-    a,
-    a:visited {
-        text-decoration: underline;
+    .nav.right {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        bottom: 0;
+        left: 0;
+        top: auto;
+        right: auto;
+        margin: 0;
+        padding: 0;
+        height: 8vh;
+        width: 100vw;
+        z-index: 1000;
+        background-color: yellow;
     }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
+    .nav.right:hover {
+        background-color: none;
     }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
+    .frontPage,
+    .frontRow {
+        width: 100vw;
+        height: auto;
     }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
+    .img__wrap,
+    .img__wrap:hover {
+        width: 90vw;
+        overflow: hidden;
+        margin-top: 5vw;
     }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
+    .img__wrap {
+        transition: 0;
+        transition-delay: 0;
     }
 
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
+    .img__wrap img {
+        width: 100vw;
+        height: auto;
+        object-fit: cover;
     }
 
-    tr,
-    img {
-        page-break-inside: avoid;
+    .img__description {
+      width: 90%;
+      height: 85%;
+      opacity: 1;
+      color: #fff;
+      margin-top: 5%;
+      opacity: 0;
     }
 
-    img {
-        max-width: 100% !important;
+    .img__description:hover {
+        opacity: 1;
     }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
+    .frontPage,
+    #row1,
+    #row3,
+    #row1.translator,
+    #row3.translator2 {
+        height: auto;
+        -webkit-transform: unset;
+        -moz-transform: unset;
+        -ms-transform: unset;
+        -o-transform: unset;
+        transform: unset;
+        transition: unset;
+        transition-delay: unset;
     }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
+    #front {
+        height: auto
+    }
+
+    .frontRow {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #front .spacer {
+        height: 8vh;
+        width: 100vw;
     }
 }

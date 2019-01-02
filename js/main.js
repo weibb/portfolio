@@ -10,9 +10,13 @@
 //         row1.removeClass("translator");
 //     }
 //     });
-$(window).scroll( function(){
+
+
+
+$(window).ready( function move_box(){
     const row1 = document.getElementById("row1");
     const row3 = document.getElementById("row3");
+
     if (row1.classList.contains("translator")) {
         $( '#row1' ).removeClass( "translator" );
     } else {
@@ -23,4 +27,32 @@ $(window).scroll( function(){
     } else {
         $( '#row3' ).addClass( "translator2" );
     }
+});
+
+
+/** TITLE COLOR CHANGE **/
+
+$(window).scroll(function() {
+	var height = $(this).scrollTop();
+    var turn = $('#section2').offset().top - 200;
+	var title = $('.title');
+
+    if( height > turn) {
+		title.addClass('title_w');
+	} else {
+		title.removeClass('title_w');
+	}
+});
+
+
+/** Toggle Contact **/
+
+$('.contact').click(function () {
+    $('#contact').slideToggle(500);
+    $('#contact').css("display", "flex");
+});
+
+$('.info').click(function () {
+    $('#info').slideToggle(500);
+    $('#info').css("display", "flex");
 });
