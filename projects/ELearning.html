@@ -9,10 +9,10 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700,700i|KoHo:500i,700i" rel="stylesheet">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="../css/projects.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/projects.css">
+        <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
     <body>
@@ -20,50 +20,70 @@
         <div class="site">
 
             <div class="nav left">
-                <p><a href="javascript:history.back()">⇦ &nbsp; Back</a></p>
+                <p>
+                    <a href="javascript:history.back()">⇦ &nbsp; Next</a>
+                     &nbsp;  &nbsp;  &nbsp;
+                    <a href="javascript:history.back()">Back &nbsp; ⇨</a>
+                </p>
             </div>
             <div class="nav right">
                 <p><a class="info">Info</a></p>
                 <p><a  class="contact">Contact</a></p>
-                <p><a href="index.html">Home</a></p>
+                <p><a href="../index.html">Home</a></p>
             </div>
 
 
 
             <div class="project" id="YP">
 
-                <div class="title">
-                    <h1>YallaPunk</h1>
-                </div>
-
                 <div class="top" id="section1">
-                    <img src="img/YP-frontpage-scroll.gif" alt="project info">
-                </div>
-
-
-                <div class="focus-h" id="section2">
-                    <div class="text">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. </p><br>
-                        <p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget.
-                        </p>
+                    <div class="title">
+                        <div id="WOS" class="title-text">
+                            <h1>E-Learning Game</h1>
+                        </div>
+                        <img class="title-img" src="../img/WOS/WOS-title2.png" alt="project info">
                     </div>
-                    <div class="img">
-                        <img class="large" src="img/YP-Programming-static.png" alt="project info">
+                    <div class="title-info">
+                        <div class="sub-info">
+                            <p class="sub-info-title">Project</p>
+                            <p>YallaPunk</p>
+                        </div>
+                        <div class="sub-info">
+                            <p class="sub-info-title">Role</p>
+                            <p>UX/UI Designer</p>
+                        </div>
+                        <div class="sub-info">
+                            <p class="sub-info-title">Tools</p>
+                            <p>Sketch, Photoshop, Illustrator</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="focus-c" id="section3">
-                    <img class="large" src="img/YP-Programming-static.png" alt="project info">
+                    <video autoplay muted loop playsinline poster="../img/YP/device---laptop7.gif">
+                        <source src="../img/YP/device-laptop-anim3.mp4" type="video/mp4" />
+                        <source src="../img/YP/device---laptop7.gif">
+                            <source src="../img/YP/device-laptop-anim3.webm" type="video/webm" />
+                    </video>
                 </div>
-                <div class="focus-h" id="section4">
+
+                <div class="focus-h" id="section2">
+                    <div class="highlight-text">
+                        <h2>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</h2>
+                    </div>
+                </div>
+                <div class="focus-h" id="section3">
                     <div class="text">
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. </p><br>
                         <p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget.
                         </p>
                     </div>
-                    <div class="img">
-                        <img class="large" src="img/YP-Programming-static.png" alt="project info">
-                    </div>
+                </div>
+
+                <div class="focus-c" id="section3">
+                    <img src="../img/YP/YP1b.png" alt="">
+                    <img src="../img/YP/YP2b.png" alt="">
+                    <img src="../img/YP/YP3b.png" alt="">
                 </div>
 
                 <div class="footer">
@@ -76,41 +96,38 @@
 
                     <span class="spacer"></span>
 
-                    <p class="right">
-                        <a href="#">Next &nbsp; ⇨</a>
-                    </p>
+                    <p class="right"></p>
                 </div>
+            </div>
 
-                <div id="contact">
-                    <p class="left">
-                        <a href="mailto:on.weication@gmail.com">on.weication@gmail.com</a>
-                        <a href="#">IG</a>
-                        <a href="#">LI</a>
-                        <a href="#">BE</a>
-                    </p>
+            <div id="contact">
+                <p class="left">
+                    <a href="mailto:on.weication@gmail.com">on.weication@gmail.com</a>
+                    <a href="#">IG</a>
+                    <a href="#">LI</a>
+                    <a href="#">BE</a>
+                </p>
 
-                    <span class="spacer"></span>
+                <span class="spacer"></span>
 
-                    <p class="right">
-                        <a href="#">Next &nbsp; ⇨</a>
-                    </p>
-                </div>
+                <p class="right">
+                    <a href="#">Next &nbsp; ⇨</a>
+                </p>
+            </div>
 
-                <div id="info">
-                    <p class="left">
-                        <a href="mailto:on.weication@gmail.com">on.weication@gmail.com</a>
-                        <a href="#">IG</a>
-                        <a href="#">LI</a>
-                        <a href="#">BE</a>
-                    </p>
+            <div id="info">
+                <p class="left">
+                    <a href="mailto:on.weication@gmail.com">on.weication@gmail.com</a>
+                    <a href="#">IG</a>
+                    <a href="#">LI</a>
+                    <a href="#">BE</a>
+                </p>
 
-                    <span class="spacer"></span>
+                <span class="spacer"></span>
 
-                    <p class="right">
-                        <a href="#">Next &nbsp; ⇨</a>
-                    </p>
-                </div>
-
+                <p class="right">
+                    <a href="#">Next &nbsp; ⇨</a>
+                </p>
             </div>
         </div>
 

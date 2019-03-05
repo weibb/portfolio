@@ -5,19 +5,18 @@ body {
 }
 
 h1 {
-   font-weight: 700;
    font-family: 'KoHo', sans-serif;
+   font-weight: inherit;
    margin: 0
 }
 
-p {
+/* p {
     font-family: 'Crimson Text', serif;
     font-size: 1.175rem;
-}
+} */
 
 img {
     max-width: 100%;
-    max-height: 100%;
 }
 
 .site {
@@ -55,6 +54,9 @@ img {
 /* ==========================================================================
    Navigation
    ========================================================================== */
+.nav p {
+    font-size: 1rem;
+}
 
 .nav.left {
     top: 0;
@@ -65,7 +67,7 @@ img {
     -o-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
-    margin: calc(50vh - 3rem) 3rem 3rem calc(1rem + 4.5vw);
+    margin: calc(50vh - 3rem) 3rem 3rem -1rem;
     text-align: center;
     height: 10vh;
     z-index: 1000;
@@ -80,7 +82,7 @@ img {
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg); */
-    margin: 3rem;
+    margin: 2rem;
     padding: 0.8rem 1rem 0 1rem;
     text-align: center;
     height: 10vh;
@@ -205,43 +207,43 @@ img {
 }
 
 #row1.translator {
-    transition: all 1s ease;
+    transition: all 1000ms ease;
     -webkit-transform:translate(0px,2vh);
     -moz-transform:translate(0px,-2vh);
     -ms-transform:translate(0px,-2vh);
     -o-transform:translate(0px,2vh);
     transform:translate(0px,-2vh);
-    transition-delay: 0.25s
+    transition-delay: 250ms;
 }
 
 #row3.translator2 {
-    transition: all 1s ease;
+    transition: all 1000ms ease;
     -webkit-transform:translate(0px,-2vh);
     -moz-transform:translate(0px,2vh);
     -ms-transform:translate(0px,2vh);
     -o-transform:translate(0px,-2vh);
     transform:translate(0px,2vh);
-    transition-delay: 0.25s
+    transition-delay: 250ms;
 }
 
 #row1 {
-    transition: all 1s ease;
+    transition: all 1000ms ease;
     -webkit-transform:translate(0px,-7vh);
     -moz-transform:translate(0px,7vh);
     -ms-transform:translate(0px,7vh);
     -o-transform:translate(0px,-7vh);
     transform:translate(0px,7vh);
-    transition-delay: 0.25s
+    transition-delay: 250ms;
 }
 
 #row3 {
-    transition: all 1s ease;
+    transition: all 1000ms ease;
     -webkit-transform:translate(0px,7vh);
     -moz-transform:translate(0px,-7vh);
     -ms-transform:translate(0px,-7vh);
     -o-transform:translate(0px,7vh);
     transform:translate(0px,-7vh);
-    transition-delay: 0.25s
+    transition-delay: 250ms;
 }
 
 .frontObject{
@@ -256,9 +258,9 @@ img {
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 /* ==========================================================================
@@ -266,37 +268,37 @@ img {
    ========================================================================== */
 
 .img__wrap {
-  position: relative;
-  height: inherit;
-  width: 20vw;
-  transition: all 1s ease;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+    transition: all 1000ms ease;
+    position: relative;
+    height: inherit;
+    width: 20vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .img__wrap img {
-  width: calc(85% + 1vw);
-  height: auto;
+    width: calc(85% + 1vw);
+    height: auto;
 }
 
 .img__description {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: calc(85% + 1vw);
-  height: auto;
-  background: rgba(103, 116, 255, 0.75);
-  color: #fff;
-  opacity: 0;
-  transition: opacity .25s, visibility .25s;
-  font-family: 'KoHo', sans-serif;
-  font-weight: 500;
-  text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: calc(85% + 1vw);
+    height: auto;
+    background: rgba(103, 116, 255, 0.75);
+    color: #fff;
+    opacity: 0;
+    transition: opacity .25s, visibility .25s;
+    font-family: 'KoHo', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .img__wrap:hover {
@@ -305,10 +307,11 @@ img {
 }
 
 .img__description:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen (min-width: 641px) and (max-width: 1000px) {
+
     .img__wrap {
         width: 24vw;
         margin: 0.3vw;
@@ -317,14 +320,10 @@ img {
     .img__wrap:hover {
         width: 32vw;
     }
-
 }
 
 
 @media screen and (max-width: 640px) {
-    body {
-
-    }
 
     .nav.right {
         display: flex;
@@ -395,7 +394,7 @@ img {
         -o-transform: unset;
         transform: unset;
         transition: unset;
-        transition-delay: unset;
+        transition-delay: 0;
     }
 
     #front {

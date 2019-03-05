@@ -33,16 +33,26 @@ $(window).ready( function move_box(){
 /** TITLE COLOR CHANGE **/
 
 $(window).scroll(function() {
-	var height = $(this).scrollTop();
-    var turn = $('#section2').offset().top - 200;
-	var title = $('.title');
+    var scroll = $(window).scrollTop();
 
-    if( height > turn) {
-		title.addClass('title_w');
-	} else {
-		title.removeClass('title_w');
-	}
+    if (scroll >= 100) {
+        $(".title-text").addClass("title_w");
+    } else {
+        $(".title-text").removeClass("title_w");
+    }
 });
+
+// $(window).scroll(function() {
+// 	var height = $(this).scrollTop();
+//     var turn = $('#section2').offset().top - 500;
+// 	var title = $('.title-text');
+//
+//     if( height > turn) {
+// 		title.addClass('title_w');
+// 	} else {
+// 		title.removeClass('title_w');
+// 	}
+// });
 
 
 /** Toggle Contact **/
