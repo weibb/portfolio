@@ -58,7 +58,7 @@ img {
 #front,
 #about-front,
 .footer {
-    background: linear-gradient(321deg, #7cf52a, #d1eeeb, #d8d1ee);
+    background: linear-gradient(321deg, #d1eeeb, #7cf52a, #d8d1ee);
     background-size: 600% 600%;
     -webkit-animation: AnimationName 52s ease infinite;
     -moz-animation: AnimationName 52s ease infinite;
@@ -281,7 +281,8 @@ header .name {
 }
 
 .nav-link:hover ,
-.nav.bottom a:hover {
+.nav.bottom a:hover,
+.nav-link-bottom:hover {
     color: red !important;
     text-shadow: 0 0 1em blue !important;
 }
