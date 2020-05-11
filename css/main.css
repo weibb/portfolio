@@ -276,12 +276,12 @@ header .name {
 }
 
 .nav-link,
-.nav-link-bottom {
+.nav.bottom a {
     color: #000;
 }
 
-.nav-link:hover,
-.nav-link-bottom:hover {
+.nav-link:hover ,
+.nav.bottom a:hover {
     color: red !important;
     text-shadow: 0 0 1em blue !important;
 }
@@ -610,6 +610,7 @@ header .name {
 @media screen and (max-width: 1024px) {
     #about-front {
         height: auto;
+        padding: 0;
     }
 
     #about {
