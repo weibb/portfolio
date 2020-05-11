@@ -1,17 +1,5 @@
-// $(window).scroll(
-//     {
-//         previousTop: 0
-//     },
-//     function move_box() {
-//     var row1 = $( window ).scrollTop();
-//     if (row1.classList.contains("translator")) {
-//         row1.addClass("translator");
-//     } else {
-//         row1.removeClass("translator");
-//     }
-//     });
 
-
+/** FRONT ANIMATION **/
 
 $(window).ready( function move_box(){
     const row1 = document.getElementById("row1");
@@ -30,6 +18,12 @@ $(window).ready( function move_box(){
 });
 
 
+$('.name').hover(function () {
+    $('#name').toggle();
+    $('#namehover').toggle();
+});
+
+
 /** TITLE COLOR CHANGE **/
 
 $(window).scroll(function() {
@@ -40,29 +34,4 @@ $(window).scroll(function() {
     } else {
         $(".title-text").removeClass("title_w");
     }
-});
-
-// $(window).scroll(function() {
-// 	var height = $(this).scrollTop();
-//     var turn = $('#section2').offset().top - 500;
-// 	var title = $('.title-text');
-//
-//     if( height > turn) {
-// 		title.addClass('title_w');
-// 	} else {
-// 		title.removeClass('title_w');
-// 	}
-// });
-
-
-/** Toggle Contact **/
-
-$('.contact').click(function () {
-    $('#contact').slideToggle(500);
-    $('#contact').css("display", "flex");
-});
-
-$('.info').click(function () {
-    $('#info').slideToggle(500);
-    $('#info').css("display", "flex");
 });

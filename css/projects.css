@@ -6,23 +6,6 @@
    display: none;
 }
 
-.title-info,
-.text p {
-   font-family: 'Crimson Text', serif;
-   font-size: 1.175rem;
-}
-
-h2 {
-   font-family: 'Crimson Text', serif;
-   font-size: 1.75rem;
-   font-weight: 400;
-}
-
-.title-info {
-    font-size: 0.95rem;
-}
-
-
 .project {
     margin: auto;
     width: 100vw;
@@ -33,76 +16,118 @@ h2 {
     flex-direction: column;
 }
 
+.focus-c img{
+    width: 100%;
+    max-width: 1920px;
+    padding-bottom: 0;
+}
+
+img.w65 {
+    width: 65%;
+}
+
+img.w55 {
+    width: 55%;
+}
+
+img.w45 {
+    width: 45%;
+}
+
+/* ==========================================================================
+  SECTION 1
+   ========================================================================== */
+
 .top {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    left:0;
-    margin: 5rem auto;
-    width: 100vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   padding: 5rem 0;
+   width: 100vw;
 }
 
 .title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 75%;
-    margin-bottom: calc(2rem + 2vw);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 65%;
+   margin-bottom: calc(2rem + 2vw);
+   box-shadow: inset 0 0 3em rgba(0, 0, 0, 0.25);
+   background-size: cover;
+}
+
+.title-info {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto 1em;
+   max-width: calc(100% - 28.8%);
+   width: 65%;
 }
 
 .title-img {
-    width: 100%;
     height: 75vh;
-    object-fit: cover;
-    object-position: center top;
+}
+
+.title-info {
+    font-size: 0.95rem;
 }
 
 .title-text{
     pointer-events: none;
     position: fixed;
-    color: rgba(101, 255, 40, 1);
     font-size: calc(2rem + 3vw);
-    line-height: calc(2rem + 3vw);
+    line-height: calc(4rem + 3vw);
     font-weight: 700;
     transition: all .5s ease-out;
     align-self: flex-start;
-    left: 0em;
-    top: 4vh;
+    left: 0;
+    top: 0;
     width: 90%;
-}
-
-.title_w{
-    /* color: rgba(0, 0, 0, 1); */
-    font-size: 0.75em;
-    padding: 0;
-    top: 0em;
-    left: 1.5em;
-    font-weight: 500;
-    margin: 0;
-}
-
-.title-info {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto 3em;
-    max-width: calc(100% - 28.8%);
-    width: 65%;
+    z-index: 500;
 }
 
 .sub-info-title {
     font-weight: 700;
 }
 
-.highlight-text {
-    width: 65%;
+.title-text h1 {
+    text-shadow: 5px 5px 16px rgba(90, 90, 90, 0.2);
 }
+
+.title_w{
+   font-size: 0.55em;
+   font-weight: 500;
+   line-height: unset;
+   top: 1.5em;
+   left: 1.5em;
+}
+
+/* ==========================================================================
+ SECTION 3
+  ========================================================================== */
+
+.highlight-text {
+   width: calc(30em + 25vw);
+   padding-top: 1rem;
+}
+
+.text {
+    padding-left: calc(10em + 5vw);
+    padding-top: 3rem;
+    width: calc(30em + 5vw);
+}
+
+/* ==========================================================================
+   SECTIONS
+   ========================================================================== */
 
 .focus-h,
 .focus-c  {
     display: flex;
     justify-content: center;
-    padding-bottom: calc(2rem + 8vw);
+    padding: 2em 0;
     width: 100vw;
 }
 
@@ -116,25 +141,221 @@ h2 {
     align-items: flex-start;
 }
 
-.focus-c img{
+#section2 {
+    padding-top: 5em;
+}
+
+#section3 {
+    padding-bottom: 5em;
+}
+
+#section4{
+    padding-top: 5em;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer,
+.footer .right {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+.footer {
+    height: 10em;
     width: 80%;
-    padding-bottom: 3rem;
+    padding: 0 10%;
 }
 
-.focus-c video {
-    width: 80%;
+
+/* ==========================================================================
+   MMAOL IMG
+   ========================================================================== */
+
+#MMAOL #section5 {
+   flex-direction: row;
+   align-items: center;
+   flex-wrap: wrap;
 }
 
-.text {
-    padding-left: calc(10em + 5vw);
-    width: calc(30em + 5vw);
+ #MMAOL #section5 img {
+     width: auto;
+ }
+
+
+/* ==========================================================================
+   YallaPunk
+   ========================================================================== */
+
+#YP .title-text {
+  color: rgba(101, 255, 40, 1);
 }
 
-.img {
-    flex-grow: 2;
-    padding: 0;
-    width: 65%;
+#YP #section1,
+#YP #section4 {
+     background-color: rgba(40, 40, 40, 1);
+     color: white;
+ }
+
+#YP .top .title {
+   background-image: url(../img/YP/YP-site-title.png);
 }
+
+/* ==========================================================================
+   World of Salus
+   ========================================================================== */
+
+#WOS .title-text {
+    color: rgba(13, 113, 243, 1);
+}
+
+#WOS .top .title {
+    background-image: url(../img/WOS/WOS-title-2.png);
+}
+
+#WOS #section2,
+#WOS #section3 {
+    background-color: rgba(40, 40, 40, 1);
+    color: white;
+  }
+
+#WOS #section1,
+#WOS #section4 {
+     background-color: rgba(237, 245, 245, 1);
+ }
+
+ /* ==========================================================================
+    Publication Timeline
+    ========================================================================== */
+
+#PubTime .title-text {
+    color: rgba(219, 183, 102, 1);
+}
+
+#PubTime .top .title {
+    background-image: url(../img/PubTime/PubTime-site-title.png);
+}
+
+#PubTime #section1,
+#PubTime #section2,
+#PubTime #section3 {
+    background-color: rgba(40, 40, 40, 1);
+    color: white;
+  }
+
+ #PubTime #section4 img {
+     margin-bottom: 4em;
+ }
+
+ /* ==========================================================================
+    Haviland Canvas
+    ========================================================================== */
+
+#HC .title-text {
+    color: rgba(224, 236, 235, 1);
+}
+
+ #HC .top .title {
+     background-image: url(../img/HC/HC-site-title.png);
+ }
+
+ #HC #section1,
+ #HC #section5 {
+      background-color: rgba(40, 40, 40, 1);
+      color: white;
+  }
+
+  #HC #section2,
+  #HC #section3 {
+       background-color: rgba(130, 134, 121, 1);
+       color: white;
+   }
+
+  #HC #section4 {
+       background-color: rgba(65, 65, 65, 1);
+   }
+
+ /* ==========================================================================
+    PLG
+    ========================================================================== */
+
+ #PLG .title-text {
+     color: rgba(255, 255, 255, 1);
+ }
+
+ #PLG .top .title {
+     background-image: url(../img/PLG/PLG-title.png);
+ }
+
+ #PLG #section1 {
+     background-color: rgba(237, 245, 245, 1);
+   }
+
+ #PLG #section4 {
+      background-color: rgba(237, 245, 245, 1);
+  }
+
+/* ==========================================================================
+ HB
+ ========================================================================== */
+
+#HB .title-text {
+  color: rgba(40, 40, 40, 1);
+}
+
+#HB .top .title {
+  background-image: url(../img/HypeBd/HB-site-title.png);
+}
+
+#HB #section1 {
+   background-color: rgba(33, 133, 208, 1);
+   color: white;
+}
+
+#HB #section2,
+#HB #section3 {
+  background-color: rgba(40, 40, 40, 1);
+  color: white;
+}
+
+#HB #section4 {
+   width: 80%;
+}
+
+#HB #section5 {
+   background-color: rgba(237, 245, 245, 1);
+}
+
+/* ==========================================================================
+  ELA
+  ========================================================================== */
+
+#ELA .title-text {
+    color: rgba(120, 154, 230, 1);
+}
+
+#ELA .top .title {
+   background-image: url(../img/ELearn/elearn-site-title.png);
+}
+
+#ELA #section2,
+#ELA #section3 {
+   background-color: rgba(213, 152, 37, 1);
+ }
+
+#ELA #section1,
+#ELA #section4 {
+    background-color: rgba(40, 40, 40, 1);
+}
+
+
+/* ==========================================================================
+   WIDTHS
+   ========================================================================== */
 
 @media screen and (max-width: 725px) {
 
@@ -147,16 +368,8 @@ h2 {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        top: auto;
-        left: auto;
         position: fixed;
         bottom: 0;
-        right: 0;
-        -webkit-transform: rotate(0);
-        -moz-transform: rotate(0);
-        -o-transform: rotate(0);
-        -ms-transform: rotate(0);
-        transform: rotate(0);
         margin: 0;
         height: 8vh;
         width: 100vw;
@@ -169,15 +382,11 @@ h2 {
     }
 
     .top {
-        margin-top: 0;
+        padding-top: calc(3rem + 3vw);
     }
 
     .title {
         width: 100%;
-    }
-
-    .title-text {
-        top: 1vh;
     }
 
     .title-info {
@@ -197,57 +406,18 @@ h2 {
         width: 100vw;
     }
 
+    .highlight-text {
+        width: 80%;
+    }
+
+    .text {
+        width: 60%;
+    }
+
     .footer {
-        opacity: 0;
-        pointer-events: none;
-        padding: 0 10% 5% 10%;;
+        padding-bottom: 5em;
     }
 }
-
-/* ==========================================================================
-   Title Colors
-   ========================================================================== */
-
-#YP .title-text {
-    color: rgba(101, 255, 40, 1);
-}
-
-#WOS .title-text {
-    color: rgba(13, 113, 243, 1);
-}
-
-#PubTime .title-text {
-    color: rgba(45, 69, 161, 1);
-}
-
-#PLG .title-text {
-    color: rgba(230, 230, 230, 1);
-}
-
-/* #HC .title-text {
-    color: rgba(130, 135, 122, 1);
-} */
-
-#HC .title-text {
-    color: rgba(0, 0, 0, 1);
-}
-
-/* #YP.title_w,
-#WOS.title_w {
-    color: rgba(0, 0, 0, 0.6);
-} */
-
-/* #section2 {
-        background-color: rgba(101, 255, 40, 0.85);
-}
-
-#section3 {
-        background-color: rgba(0, 0, 0, 0.85);
-}
-
-#section4 {
-        background-color: rgba(0, 0, 0, 0.08);
-} */
 
 
 @media screen (max-width: 1000px) {
