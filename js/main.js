@@ -23,6 +23,14 @@ $('.name').hover(function () {
     $('#namehover').toggle();
 });
 
+/** LOAD TITLE ANIMATION **/
+
+// $(window).load(function() {
+//     $('.titlenone').css({"opacity":"1"}  );
+// });
+
+
+
 
 /** TITLE COLOR CHANGE **/
 
@@ -35,3 +43,40 @@ $(window).scroll(function() {
         $(".title-text").removeClass("title_w");
     }
 });
+
+
+/** TOGGLE about **/
+// 
+// $('.about').click(function () {
+//     $('#about').slideToggle(500);
+//     $('#about').css("display", "flex");
+// });
+
+
+
+
+// $(window).scroll(
+//     {
+//         previousTop: 0
+//     },
+//     function move_box() {
+//     var row1 = $( window ).scrollTop();
+//     if (row1.classList.contains("translator")) {
+//         row1.addClass("translator");
+//     } else {
+//         row1.removeClass("translator");
+//     }
+//     });
+
+
+// $(window).scroll(function() {
+// 	var height = $(this).scrollTop();
+//     var turn = $('#section2').offset().top - 500;
+// 	var title = $('.title-text');
+//
+//     if( height > turn) {
+// 		title.addClass('title_w');
+// 	} else {
+// 		title.removeClass('title_w');
+// 	}
+// });

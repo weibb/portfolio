@@ -342,19 +342,106 @@ img.w45 {
    background-image: url(../img/ELearn/elearn-site-title.png);
 }
 
+#ELA #section1 {
+    color: white;
+}
+
 #ELA #section2,
 #ELA #section3 {
    background-color: rgba(213, 152, 37, 1);
  }
 
+#ELA #section1,
 #ELA #section4 {
     background-color: rgba(40, 40, 40, 1);
+}
+
+/* ==========================================================================
+  Ceramics
+  ========================================================================== */
+
+#ceramics .title-text {
+    color: rgba(0, 0, 0, 1);
+}
+
+#ceramics .top .title {
+   background-image: url(../img/ELearn/elearn-site-title.png);
+}
+
+.grid-gallery-container {
+    width: calc(100vw - 3em);
+    margin: 1.5em;
+}
+
+#ceramics .grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(20, 5vw);
+    grid-gap: 1.5rem;
+}
+
+#ceramics .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#ceramics .gallery__item--1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 4;
+}
+
+#ceramics .gallery__item--2 {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 4;
+}
+
+#ceramics .gallery__item--3 {
+    grid-column: 5 / span 4;
+    grid-row: 1 / span 6;
+
+}
+
+#ceramics .gallery__item--4 {
+    grid-column: 1 / span 4;
+    grid-row: 5 / span 7;
+}
+
+#ceramics .gallery__item--5 {
+    grid-column: 5 / span 4;
+    grid-row: 7 / span 6;
+}
+
+#ceramics .gallery__item--6 {
+    grid-column: 1 / span 2;
+    grid-row: 12 / span 4;
+}
+
+#ceramics .gallery__item--7 {
+    grid-column: 3 / span 2;
+    grid-row: 12 / span 4;
+}
+
+#ceramics .gallery__item--8 {
+    grid-column: 5 / span 4;
+    grid-row: 13 / span 8;
+}
+
+#ceramics .gallery__item--9 {
+    grid-column: 1 / span 4;
+    grid-row: 16 / span 5;
 }
 
 
 /* ==========================================================================
    WIDTHS
    ========================================================================== */
+
+@media screen and (max-width: 1000px) {
+    .title {
+        width: 65%;
+    }
+}
 
 @media screen and (max-width: 725px) {
 
@@ -370,7 +457,7 @@ img.w45 {
         position: fixed;
         bottom: 0;
         margin: 0;
-        height: 8vh;
+        height: 4em;
         width: 100vw;
         z-index: 1100;
         background-color: yellow;
@@ -381,16 +468,28 @@ img.w45 {
     }
 
     .top {
-        padding-top: calc(3rem + 3vw);
+        padding-top: calc(4.65rem + 3vw);
     }
 
-    .title {
-        width: 100%;
-    }
-
-    .title-info {
+    .title ,
+    .title-info,
+    .focus-c video,
+    .focus-c img {
         width: 100%
     }
+
+    .title-text {
+        font-size: 2em;
+        line-height: 1.45em;
+    }
+
+    .title_w{
+        font-size: 0.55em;
+        font-weight: 500;
+        line-height: unset;
+        top: 1.5em;
+        left: 1.5em;
+     }
 
     .sub-info {
         width: 25%;
@@ -398,11 +497,6 @@ img.w45 {
 
     .text {
         padding-left: 4.5rem;
-    }
-
-    .focus-c video,
-    .focus-c img {
-        width: 100vw;
     }
 
     .highlight-text {
@@ -414,13 +508,16 @@ img.w45 {
     }
 
     .footer {
-        padding-bottom: 5em;
+        padding-bottom: 4em;
+        flex-direction: column;
+        justify-content: center;
+        height: 8em;
+    }
+
+    .footer .right {
+        padding-top: 0.8em;
     }
 }
 
 
-@media screen (max-width: 1000px) {
-    .title {
-        width: 65%;
-    }
-}
+
