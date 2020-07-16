@@ -56,6 +56,8 @@ img.w45 {
    margin-bottom: calc(2rem + 2vw);
    box-shadow: inset 0 0 3em rgba(0, 0, 0, 0.25);
    background-size: cover;
+   background-repeat:no-repeat;
+   background-position: center center;
 }
 
 .title-info {
@@ -68,10 +70,6 @@ img.w45 {
 
 .title-img {
     height: 75vh;
-}
-
-.title-info {
-    font-size: 0.95rem;
 }
 
 .title-text{
@@ -90,6 +88,14 @@ img.w45 {
 
 .sub-info-title {
     font-weight: 700;
+}
+
+.sub-info {
+    width: 30%;
+}
+
+.sub-info p {
+    font-size: 1.15rem;
 }
 
 .title-text h1 {
@@ -171,21 +177,39 @@ img.w45 {
     padding: 0 10%;
 }
 
-
 /* ==========================================================================
-   MMAOL IMG
-   ========================================================================== */
+  GRID
+  ========================================================================== */
 
-#MMAOL #section5 {
-   flex-direction: row;
-   align-items: center;
-   flex-wrap: wrap;
+  .grid-gallery-container {
+    width: 65%;
+    margin: 1.5em;
 }
 
- #MMAOL #section5 img {
-     width: auto;
- }
+ .grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto);
+    grid-gap: 1.5rem;
+}
 
+ .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#brand #section3,
+#illu #section3,
+#ceramics #section3 {
+    padding-bottom: 0;
+}
+
+#brand .top .title,
+#illu .top .title,
+#ceramics .top .title {
+    display: none;
+ }
 
 /* ==========================================================================
    YallaPunk
@@ -251,6 +275,66 @@ img.w45 {
      margin-bottom: 4em;
  }
 
+  /* ==========================================================================
+    MMAOL
+    ========================================================================== */
+
+#MMAOL .title-text {
+    color: rgba(40, 40, 40, 1);
+}
+
+#MMAOL .top .title {
+    background-image: url(../img/MMAOL/MMAOL-title2.jpg);
+}
+
+#MMAOL #section1,
+#MMAOL #section2,
+#MMAOL #section3 {
+    background-color: rgba(145, 45, 67, 1);
+    color: white;
+    }
+
+#MMAOL #section2 {
+    padding: 0;
+    }
+
+#MMAOL #section4 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-bottom: 5em;
+} 
+
+#MMAOL #section4 img {
+    width: auto;
+    margin: 1em;
+}
+
+#MMAOL .image_on {
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+.image_off, .hover:hover .image_on{
+    display:none
+ }
+ .image_on, .hover:hover .image_off{
+    display:block
+ }
+
+ .hover_filter {
+    filter: grayscale(1);
+    opacity: 0.3;
+    transition: 0.5s;
+ }
+
+ .hover_filter:hover {
+    filter: grayscale(0);
+    opacity: 1;
+    transition: 0.5s;
+ }
+
+
  /* ==========================================================================
     Haviland Canvas
     ========================================================================== */
@@ -275,16 +359,16 @@ img.w45 {
        color: white;
    }
 
-  #HC #section4 {
-       background-color: rgba(65, 65, 65, 1);
-   }
+#HC #section4 {
+    background-color: rgba(65, 65, 65, 1);
+}
 
  /* ==========================================================================
     PLG
     ========================================================================== */
 
  #PLG .title-text {
-     color: rgba(255, 255, 255, 1);
+     color: rgb(245, 245, 245);
  }
 
  #PLG .top .title {
@@ -304,7 +388,7 @@ img.w45 {
  ========================================================================== */
 
 #HB .title-text {
-  color: rgba(40, 40, 40, 1);
+  color: rgba(0, 0, 0, 1);
 }
 
 #HB .top .title {
@@ -357,34 +441,169 @@ img.w45 {
 }
 
 /* ==========================================================================
+  Brand
+  ========================================================================== */
+
+#brand .title-text {
+    color: rgb(233, 204, 43);
+}
+
+#brand .text {
+    padding: 2rem;
+}
+
+#brand #section4{
+    padding-top: 0;
+}
+
+#brand .grid-gallery {
+    grid-gap: 0;
+    padding-bottom: 3rem;
+}
+
+#brand #section4 {
+    padding-bottom: 10em;
+}
+
+#brand .gallery__item--1,
+#brand .gallery__item--2,
+#brand .gallery__item--3,
+#brand .gallery__item--4,
+#brand .gallery__item--5,
+#brand .gallery__item--6,
+#brand .gallery__item--7,
+#brand .gallery__item--8 {
+    grid-column: 1 / span 8;
+    grid-row: auto;
+}
+
+#brand .gallery__item--12 {
+    grid-column: 3 / span 4;
+    grid-row: 1 / span 2;
+}
+
+#brand .gallery__item--11 {
+    grid-column: 3 / span 4;
+    grid-row: 3 / span 2;
+}
+
+#brand .gallery__item--9 {
+    grid-column:3 / span 4;
+    grid-row: 5 / span 2;
+}
+
+#brand .gallery__item--10 {
+    grid-column: 3 / span 4;
+    grid-row: 7 / span 2;
+}
+
+/* ==========================================================================
+  Illu
+  ========================================================================== */
+
+  #illu .title-text {
+    color: rgb(117, 138, 231);
+}
+
+#illu #section4 {
+    padding-bottom: 10em;
+}
+
+/*-- left --*/
+
+#illu .gallery__item--1 {
+    grid-column: 1 / span 4;
+    grid-row: auto;
+}
+
+#illu .gallery__item--2 {
+    grid-column: 1 / span 4;
+    grid-row: auto;
+}
+
+#illu .gallery__item--5 {
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 6;
+}
+
+#illu .gallery__item--7 {
+    grid-column: 1 / span 2;
+    grid-row: 9 / span 2;
+}
+
+#illu .gallery__item--8 {
+    grid-column: 3 / span 2;
+    grid-row: 9 / span 2;
+}
+
+#illu .gallery__item--9 {
+    grid-column: 1 / span 2;
+    grid-row: 11 / span 2;
+}
+
+#illu .gallery__item--10 {
+    grid-column: 3 / span 2;
+    grid-row: 11 / span 2;
+}
+
+#illu .gallery__item--11 {
+    grid-column: 1 / span 4;
+    grid-row: 13 / span 4;
+}
+
+#illu .gallery__item--14 {
+    grid-column: 2 / span 2;
+    grid-row: 17 / span 4;
+}
+
+
+
+
+/*-- right --*/
+
+#illu .gallery__item--3 {
+    grid-column: 5 / span 4;
+    grid-row: 1 / span 4;
+}
+
+#illu .gallery__item--4 {
+    grid-column: 5 / span 4;
+    grid-row: 5 / span 6;
+}
+
+#illu .gallery__item--6 {
+    grid-column: 5 / span 4;
+    grid-row: 11 / span 4;
+}
+
+#illu .gallery__item--12 {
+    grid-column: 5 / span 4;
+    grid-row: 15 / span 3;
+}
+
+#illu .gallery__item--13 {
+    grid-column: 5 / span 4;
+    grid-row: 18 / span 5;
+}
+
+
+
+
+
+/* ==========================================================================
   Ceramics
   ========================================================================== */
 
+#ceramics.project {
+    background-color: rgb(30, 31, 36)
+    ;
+}
+
 #ceramics .title-text {
-    color: rgba(0, 0, 0, 1);
+    color: rgb(62, 100, 78);
 }
 
-#ceramics .top .title {
-   background-image: url(../img/ELearn/elearn-site-title.png);
-}
-
-.grid-gallery-container {
-    width: calc(100vw - 3em);
-    margin: 1.5em;
-}
-
-#ceramics .grid-gallery {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(20, 5vw);
-    grid-gap: 1.5rem;
-}
-
-#ceramics .gallery__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+/*-- right --*/
 
 #ceramics .gallery__item--1 {
     grid-column: 1 / span 2;
@@ -396,40 +615,56 @@ img.w45 {
     grid-row: 1 / span 4;
 }
 
-#ceramics .gallery__item--3 {
-    grid-column: 5 / span 4;
-    grid-row: 1 / span 6;
-
-}
-
 #ceramics .gallery__item--4 {
     grid-column: 1 / span 4;
-    grid-row: 5 / span 7;
-}
-
-#ceramics .gallery__item--5 {
-    grid-column: 5 / span 4;
-    grid-row: 7 / span 6;
-}
-
-#ceramics .gallery__item--6 {
-    grid-column: 1 / span 2;
-    grid-row: 12 / span 4;
-}
-
-#ceramics .gallery__item--7 {
-    grid-column: 3 / span 2;
-    grid-row: 12 / span 4;
-}
-
-#ceramics .gallery__item--8 {
-    grid-column: 5 / span 4;
-    grid-row: 13 / span 8;
+    grid-row: 5 / span 5;
 }
 
 #ceramics .gallery__item--9 {
     grid-column: 1 / span 4;
-    grid-row: 16 / span 5;
+    grid-row: 10 / span 5;
+}
+
+#ceramics .gallery__item--6 {
+    grid-column: 1 / span 2;
+    grid-row: 15 / span 3;
+}
+
+#ceramics .gallery__item--7 {
+    grid-column: 3 / span 2;
+    grid-row: 15 / span 3;
+}
+
+#ceramics .gallery__item--12 {
+    grid-column: 1 / span 4;
+    grid-row: 18 / span 9;
+}
+
+/*-- left --*/
+
+#ceramics .gallery__item--5 {
+    grid-column: 5 / span 4;
+    grid-row: 1 / span 6;
+}
+
+#ceramics .gallery__item--10 {
+    grid-column: 5 / span 4;
+    grid-row: 7 / span 4;
+}
+
+#ceramics .gallery__item--3 {
+    grid-column: 5 / span 4;
+    grid-row: 11 / span 5;
+}
+
+#ceramics .gallery__item--11 {
+    grid-column: 5 / span 4;
+    grid-row: 16 / span 7;
+}
+
+#ceramics .gallery__item--8 {
+    grid-column: 5 / span 4;
+    grid-row: 23 / span 7;
 }
 
 
@@ -440,6 +675,9 @@ img.w45 {
 @media screen and (max-width: 1000px) {
     .title {
         width: 65%;
+    }
+    .grid-gallery-container {
+        width: calc(100vw - 3em);
     }
 }
 
@@ -507,6 +745,11 @@ img.w45 {
         width: 60%;
     }
 
+    #section5,
+    #section4 {
+        padding-bottom: 5rem;
+    }
+
     .footer {
         padding-bottom: 4em;
         flex-direction: column;
@@ -517,6 +760,45 @@ img.w45 {
     .footer .right {
         padding-top: 0.8em;
     }
+
+    .grid-gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #MMAOL #section4 img {
+        width: 100%;
+        margin: 0 0 5rem 0;
+     }
+
+     #MMAOL .image_on {
+        display: none;
+     }
+
+     #MMAOL .image_off {
+        display: inline-block;
+     }
+
+     #brand .top,
+     #illu .top,
+     #ceramics .top {
+         padding:3rem 0;
+     }
+
+     #brand .top,
+     #illu .top,
+     #ceramics .top {
+         padding:3rem 0;
+     }
+
+    #brand .grid-gallery-container {
+        width: 100vw;
+    }
+
+    #brand .grid-gallery#solo-logo {
+        width: 70vw;
+    }
+
 }
 
 

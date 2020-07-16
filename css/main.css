@@ -197,7 +197,6 @@ header .name {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    align-items: center;
 }
 
 #about .skills span {
@@ -273,6 +272,7 @@ header .name {
     font-weight: 500;
     text-decoration: none;
     text-shadow: 0 0 1em blue;
+    color: #000;
 }
 
 .nav-link,
@@ -368,7 +368,7 @@ header .name {
 }
 
 .frontObject.empty {
-    width: 10vw;
+    width: 6vw;
 }
 
 
@@ -422,7 +422,7 @@ header .name {
 }
 
 .img__wrap.imgsmall {
-    width: 14vw;
+    width: 16vw;
 }
 
 .img__wrap.imgsmall img {
@@ -481,19 +481,29 @@ header .name {
 
     .img__wrap {
         width: 16vw;
+        max-width: 300px;
     }
 
     .img__wrap:hover {
         width: 20vw;
+        max-width: 350px;
     }
 
     .img__wrap.imgsmall {
         width: 10vw;
+        max-width: 220px;
     }
 
     .img__wrap.imgsmall:hover {
         width: 14vw;
+        max-width: 280px;
     }
+
+    .frontRow {
+        width: auto;;
+    }
+
+ 
 }
 
 @media screen and (max-width: 640px) {
