@@ -201,7 +201,10 @@ img.w45 {
 
 #brand #section3,
 #illu #section3,
-#ceramics #section3 {
+#ceramics #section3,
+#brand #section1,
+#illu #section1,
+#ceramics #section1, {
     padding-bottom: 0;
 }
 
@@ -210,11 +213,12 @@ img.w45 {
 #ceramics .top .title {
     display: none;
  }
+ 
 
- #illu #section4,
+#brand #section4,
+#illu #section4,
 #ceramics #section4 {
-    padding-top: 2em;
-    padding-bottom: 8em;
+    padding-top: 0;
 }
 
 /* ==========================================================================
@@ -738,7 +742,7 @@ img.w45 {
 
     #section5,
     #section4 {
-        padding-bottom: 5rem;
+        padding-bottom: 1rem;
     }
 
     .footer {
@@ -770,10 +774,13 @@ img.w45 {
         display: inline-block;
      }
 
-     #brand .top,
+     #brand .top {
+         padding:2em 0;
+     }
+
      #illu .top,
      #ceramics .top {
-         padding:3rem 0;
+         padding:4em 0;
      }
 
      #illu #section4 .gallery__item,
