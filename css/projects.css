@@ -211,6 +211,12 @@ img.w45 {
     display: none;
  }
 
+ #illu #section4,
+#ceramics #section4 {
+    padding-top: 2em;
+    padding-bottom: 8em;
+}
+
 /* ==========================================================================
    YallaPunk
    ========================================================================== */
@@ -406,10 +412,6 @@ img.w45 {
   color: white;
 }
 
-#HB #section4 {
-   width: 80%;
-}
-
 #HB #section5 {
    background-color: rgba(237, 245, 245, 1);
 }
@@ -452,17 +454,10 @@ img.w45 {
     padding: 2rem;
 }
 
-#brand #section4{
-    padding-top: 0;
-}
 
 #brand .grid-gallery {
     grid-gap: 0;
     padding-bottom: 3rem;
-}
-
-#brand #section4 {
-    padding-bottom: 10em;
 }
 
 #brand .gallery__item--1,
@@ -503,10 +498,6 @@ img.w45 {
 
   #illu .title-text {
     color: rgb(117, 138, 231);
-}
-
-#illu #section4 {
-    padding-bottom: 10em;
 }
 
 /*-- left --*/
@@ -785,11 +776,10 @@ img.w45 {
          padding:3rem 0;
      }
 
-     #brand .top,
-     #illu .top,
-     #ceramics .top {
-         padding:3rem 0;
-     }
+     #illu #section4 .gallery__item,
+     #ceramics #section4 .gallery__item {
+        margin-bottom: 1em;
+    }
 
     #brand .grid-gallery-container {
         width: 100vw;
