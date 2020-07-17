@@ -458,43 +458,15 @@ img.w45 {
     padding: 2rem;
 }
 
-
-#brand .grid-gallery {
-    grid-gap: 0;
-    padding-bottom: 3rem;
+#brand .brand-proj {
+    padding: 2rem 0 3rem;
+    line-height: 0;
 }
 
-#brand .gallery__item--1,
-#brand .gallery__item--2,
-#brand .gallery__item--3,
-#brand .gallery__item--4,
-#brand .gallery__item--5,
-#brand .gallery__item--6,
-#brand .gallery__item--7,
-#brand .gallery__item--8 {
-    grid-column: 1 / span 8;
-    grid-row: auto;
+#brand .brand-proj-sm {
+    width: 55%;;
 }
 
-#brand .gallery__item--12 {
-    grid-column: 3 / span 4;
-    grid-row: 1 / span 2;
-}
-
-#brand .gallery__item--11 {
-    grid-column: 3 / span 4;
-    grid-row: 3 / span 2;
-}
-
-#brand .gallery__item--9 {
-    grid-column:3 / span 4;
-    grid-row: 5 / span 2;
-}
-
-#brand .gallery__item--10 {
-    grid-column: 3 / span 4;
-    grid-row: 7 / span 2;
-}
 
 /* ==========================================================================
   Illu
@@ -782,11 +754,6 @@ img.w45 {
      #ceramics .top {
          padding:4em 0;
      }
-
-     #illu #section4 .gallery__item,
-     #ceramics #section4 .gallery__item {
-        margin-bottom: 1em;
-    }
 
     #brand .grid-gallery-container {
         width: 100vw;
