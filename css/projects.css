@@ -639,13 +639,25 @@ img.w45 {
    WIDTHS
    ========================================================================== */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     .title {
         width: 65%;
     }
     .grid-gallery-container {
         width: calc(100vw - 3em);
     }
+
+    #MMAOL .image_on {
+        display: none;
+     }
+
+     #MMAOL .image_off {
+        display: inline-block;
+     }
+
+     #MMAOL #section4 {
+         width: 70%;
+     }
 }
 
 @media screen and (max-width: 725px) {
@@ -739,14 +751,6 @@ img.w45 {
     #MMAOL #section4 img {
         width: 100%;
         margin: 0 0 5rem 0;
-     }
-
-     #MMAOL .image_on {
-        display: none;
-     }
-
-     #MMAOL .image_off {
-        display: inline-block;
      }
 
      #brand .top {
