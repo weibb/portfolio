@@ -755,12 +755,8 @@ img.w45 {
          padding:4em 0;
      }
 
-    #brand .grid-gallery-container {
-        width: 100vw;
-    }
-
-    #brand .grid-gallery#solo-logo {
-        width: 70vw;
+    #brand .text {
+        width: calc(100% - 4rem);
     }
 
 }
