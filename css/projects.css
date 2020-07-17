@@ -181,6 +181,10 @@ img.w45 {
   GRID
   ========================================================================== */
 
+figure {
+    margin: 0;
+}
+
   .grid-gallery-container {
     width: 65%;
     margin: 1.5em;
@@ -662,6 +666,10 @@ img.w45 {
      .mobile-hide {
          display: none;
      }
+
+     .mobile-small {
+        margin: calc(3em + 5vw);
+    }
 }
 
 @media screen and (max-width: 725px) {
@@ -730,12 +738,13 @@ img.w45 {
 
     #section5,
     #section4 {
-        padding-bottom: 1rem;
+        padding-bottom: 3em;
     }
 
     .footer {
         padding-bottom: 4em;
         width: 88%;
+        padding: 0 6% 4em 6%;
     }
 
     .footer .name {
