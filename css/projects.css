@@ -204,7 +204,7 @@ img.w45 {
 #ceramics #section3,
 #brand #section1,
 #illu #section1,
-#ceramics #section1, {
+#ceramics #section1 {
     padding-bottom: 0;
 }
 
@@ -719,18 +719,21 @@ img.w45 {
 
     .footer {
         padding-bottom: 4em;
-        flex-direction: column;
-        justify-content: center;
-        height: 8em;
+        width: 88%;
     }
 
-    .footer .right {
-        padding-top: 0.8em;
+    .footer .name {
+        width: 70%;
+        text-align: left;
     }
 
     .grid-gallery {
         display: flex;
         flex-direction: column;
+    }
+
+    .grid-gallery-container {
+        width: 100vw;
     }
 
     #MMAOL #section4 img {
