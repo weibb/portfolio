@@ -218,11 +218,13 @@ figure {
     display: none;
  }
  
-
-#brand #section4,
 #illu #section4,
 #ceramics #section4 {
-    padding-top: 0;
+    padding-top: 10rem;
+}
+
+#brand #section4 {
+    padding-top: 5rem;
 }
 
 /* ==========================================================================
@@ -765,6 +767,15 @@ figure {
         width: 100%;
         margin: 0 0 5rem 0;
      }
+
+     #brand #section4 {
+         padding-top: 0;
+     }
+
+    #illu #section4,
+    #ceramics #section4 {
+        padding-top: 3rem;
+    }
 
      #brand .top {
          padding:2em 0;
