@@ -30,8 +30,8 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 100) {
-        $(".title-text").addClass("title_w");
+        $('.title-text').addClass('title_w');
     } else {
-        $(".title-text").removeClass("title_w");
+        $('.title-text').removeClass('title_w');
     }
 });
