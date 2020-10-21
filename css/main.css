@@ -628,20 +628,6 @@ header .name {
         display: none;
     }
 
-    .footermobile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .svg-footer {
-        margin: 0 0.25rem;
-        width: auto;
-    }                 
-    .footermobile .svg-footer:hover {
-        fill: red;
-    }
-
     .nav.right {
         display: flex;
         align-items: center;
@@ -727,6 +713,20 @@ header .name {
         width: 30vw;
         height: auto;
     }
+
+    .footermobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .svg-footer {
+        margin: 0 0.25rem;
+        width: auto;
+    }                 
+    .footermobile .svg-footer:hover {
+        fill: red;
+    }
     
 }
 
@@ -753,7 +753,7 @@ header .name {
     }
 
     .img__wrap.img-mobile {
-        width: 45vw;
+        width: 55vw;
         height: auto;
     }
 

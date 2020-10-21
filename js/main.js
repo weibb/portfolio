@@ -29,7 +29,7 @@ $('.name').hover(function () {
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 100) {
+    if (scroll >= 80) {
         $('.title-text').addClass('title_w');
     } else {
         $('.title-text').removeClass('title_w');
