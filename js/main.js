@@ -1,6 +1,5 @@
 
 /** FRONT ANIMATION **/
-
 $(window).ready( function move_box(){
     const row1 = document.getElementById("row1");
     const row3 = document.getElementById("row3");
@@ -25,7 +24,6 @@ $('.name').hover(function () {
 
 
 /** TITLE COLOR CHANGE **/
-
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 

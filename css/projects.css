@@ -81,10 +81,8 @@ img.w45 {
 .title-text{
     pointer-events: none;
     position: fixed;
-    /* font-size: calc(1rem + 3vw); */
     font-size:   calc(1.5rem + 2vw);
     line-height: calc(2.5rem + 2vw);
-    font-weight: 700;
     transition: all .5s ease-out;
     align-self: flex-start;
     left: 0;
@@ -96,11 +94,11 @@ img.w45 {
 .top .img__title {
     width: 65%;
     background: rgba(0, 0, 0, 0);
-    /* box-shadow: 8px 8px; */
 }
 
 .sub-info-title {
     font-weight: 700;
+    font-style: italic;
 }
 
 .sub-info {

@@ -12,7 +12,8 @@ body {
 
 h1 {
    font-family: 'KoHo', sans-serif;
-   font-weight: inherit;
+   font-style: italic;
+   font-weight: 700;
    margin: 0
 }
 
@@ -20,10 +21,13 @@ h2 {
    font-family: 'Crimson Text', serif;
    font-size: 1.75rem;
    font-weight: 400;
+   font-style: italic;
 }
 
 p {
    font-family: 'Crimson Text', serif;
+   font-style: normal;
+   font-weight: 400;
    font-size: 1rem;
    line-height: 1.75rem;
 }
@@ -180,6 +184,8 @@ header .name {
 
 #about h2 {
     font-family: 'KoHo', sans-serif;
+    font-style: italic;
+    font-weight: 700;
 }
 
 #about .left {
@@ -241,6 +247,7 @@ header .name {
 .nav p a {
     font-family: 'KoHo', sans-serif;
     font-style: italic;
+    font-weight: 500;
     text-decoration: none;
     color: #000;
     font-size: 1rem;
@@ -278,23 +285,12 @@ header .name {
 }
 
 .nav.left p a {
-    /* font-family: 'Koto', sans-serif;
-    font-style: italic;
-    text-decoration: none; */
     padding: 0.8rem 1rem;
-    /* text-shadow: 0 0 1em blue; */
 }
 
 .nav.right:hover,
 .nav.left p a:hover {
     background-color: rgba(255,255,0,1);
-}
-
-.nav.right p a {
-    /* font-family: 'KoHo', sans-serif;
-    font-style: italic;
-    text-decoration: none;
-    color: #000; */
 }
 
 .nav-link,
@@ -407,8 +403,7 @@ header .name {
     justify-content: center;
     align-items: center;
     margin: 0.23rem 0.65rem;
-    box-shadow: /*15px 15px 1.5em rgba(0, 0, 0, 0.15),*/
-                8px 8px rgba(34, 70, 255, 1);
+    box-shadow: 8px 8px rgba(34, 70, 255, 1);
 }
 
 .img__title {
@@ -441,6 +436,7 @@ header .name {
     position: absolute;
     text-align: center;
     font-family: 'KoHo', sans-serif;
+    font-style: italic;
     font-size: 0.8rem;
     font-weight: 500;
     line-height: 1.2rem;
