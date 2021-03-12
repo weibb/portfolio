@@ -1,0 +1,399 @@
+/* ==========================================================================
+   Project Page
+   ========================================================================== */
+
+a {
+    text-decoration: underline;
+}
+
+.nav.bottom {
+   display: none;
+}
+
+.project {
+    margin: auto;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.focus-c img{
+    width: 100%;
+    max-width: 1920px;
+    padding-bottom: 0;
+}
+
+img.w70 {
+    width: 70%;
+}
+
+img.w65 {
+    width: 65%;
+}
+
+img.w55 {
+    width: 55%;
+}
+
+img.w45 {
+    width: 45%;
+}
+
+img.w35 {
+    width: 35%;
+}
+
+.p-w-padding {
+    padding-bottom: 3rem;
+}
+
+.title-info p.text-img {
+    font-size: 0.75rem;
+}
+
+/* ==========================================================================
+  SECTION 1
+   ========================================================================== */
+
+.top {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   width: 100vw;
+}
+
+.title-img {
+   width: 50%;
+   box-shadow: inset 0 0 3em rgba(0, 0, 0, 0.25);
+   background-size: cover;
+   background-repeat:no-repeat;
+   background-position: center center;
+}
+
+.title-info {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 1rem;
+   width: 100%;
+   flex-wrap: wrap;
+}
+
+.title-big {
+    font-size: calc(4rem + 2vw);
+    padding-bottom: 3rem;
+}
+
+.title-text{
+    align-self: center;
+    width: 40%;
+    padding: 6rem;
+}
+
+.top .img__title {
+    width: 65%;
+    background: rgba(0, 0, 0, 0);
+}
+
+.sub-info-title {
+    font-weight: 700;
+}
+
+.sub-info {
+    width: 30%;
+}
+
+.sub-info p {
+    font-size: 1.15rem;
+}
+
+.title_w{
+   font-size: 0.55em;
+   font-weight: 500;
+   line-height: unset;
+   top: 1.5em;
+   left: 1.5em;
+}
+
+.highlight-text {
+   width: calc(30em + 25vw);
+   padding-top: 1rem;
+}
+
+.text-block {
+    padding-top: 3rem;
+    width: 55%;
+    max-width: 924px;
+}
+
+/* ==========================================================================
+   SECTIONS
+   ========================================================================== */
+
+.focus-h,
+.focus-c  {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 3rem;
+    width: 100vw;
+}
+
+.focus-c {
+    flex-direction: column;
+    align-items: center;
+}
+
+.focus-h {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer,
+.footer .right {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+.footer {
+    height: 10em;
+    width: 80%;
+    padding: 0 10%;
+}
+
+
+/* ==========================================================================
+   World of Salus
+   ========================================================================== */
+
+#WOS .top .title-img {
+    background-image: url(../img/WOS/WOS-title-2.png);
+}
+
+#WOS #section1,
+#WOS #section3,
+#WOS #section6 {
+     background-color: rgba(237, 245, 245, 1);
+ }
+
+ #WOS #section4{
+    background-color: rgba(249, 250, 252, 1);
+  }
+
+ /* ==========================================================================
+    Publication Timeline
+    ========================================================================== */
+
+#PubTime .title-text {
+    color: rgba(219, 183, 102, 1);
+}
+
+#PubTime .top .title {
+    background-image: url(../img/PubTime/PubTime-site-title.png);
+}
+
+#PubTime #section1,
+#PubTime #section2,
+#PubTime #section3 {
+    background-color: rgba(40, 40, 40, 1);
+    color: white;
+  }
+
+ #PubTime #section4 img {
+     margin-bottom: 4em;
+ }
+
+ /* ==========================================================================
+    Haviland Canvas
+    ========================================================================== */
+
+#HC .title-text {
+    color: #fff;
+}
+
+ #HC .top .title-img {
+     background-image: url(../img/HC/HC-site-title.png);
+ }
+
+ #HC #section1 {
+    background-color: rgba(130, 134, 121, 1);
+    color: white;
+}
+
+ #HC #section2,
+ #HC #section4,
+ #HC #section6 {
+      background-color: rgba(40, 40, 40, 1);
+      color: white;
+  }
+
+#HC #section5 {
+    background-color: rgba(65, 65, 65, 1);
+    color: white;
+}
+
+#HC #section3 .title-info {
+    flex-wrap: nowrap;
+    padding-bottom: 4rem;
+}
+
+
+/* ==========================================================================
+ HB
+ ========================================================================== */
+
+#HB .title-text {
+  color: rgba(0, 0, 0, 1);
+}
+
+#HB .top .title-img {
+  background-image: url(../img/HypeBd/HB-site-title.png);
+}
+
+#HB #section1,
+#HB #section3,
+#HB #section5,
+#HB #section8 {
+   background-color: rgba(242, 250, 252, 1);
+   color: black;
+}
+
+#HB #section2,
+#HB #section4,
+#HB #section7 {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#HB #section6 {
+    background-color: rgb(246, 246, 246);
+}
+
+#HB #section5 .sub-info {
+    width: 48%;
+}
+
+/* ==========================================================================
+   WIDTHS
+   ========================================================================== */
+
+@media screen and (max-width: 1200px) {
+
+    .title {
+        width: 65%;
+    }
+    .grid-gallery-container {
+        width: calc(100vw - 3em);
+    }
+
+     .mobile-hide {
+         display: none;
+     }
+
+     .title-info {
+         flex-wrap: wrap;
+         align-content: center;
+     }
+
+     #section1 .text-block .title-info {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #HC #section3 .title-info {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .sub-info {
+         width: 48%;
+     }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .top {
+        flex-direction: column;
+    }
+
+    .title-img {
+        height: 50vh;
+        width: 100vw;
+    }
+
+    .title-text {
+        width: 60%;
+    }
+
+    .title-info {
+        flex-direction: column;
+    }
+
+    #HB #section5 .sub-info,
+    .sub-info {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 725px) {
+
+    .nav.left,
+    .nav.right {
+        display: none;
+    }
+
+    .nav.bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: fixed;
+        bottom: 0;
+        margin: 0;
+        height: 4em;
+        width: 100vw;
+        z-index: 1100;
+        background-color: yellow;
+    }
+
+    .nav.left p {
+        padding: 0.8rem 1rem;
+    }
+
+    .title-text, .text-block {
+        width: 90%;
+    }
+
+    img.w70, img.w65, img.w55, img.w45 {
+        width: 100vw;
+    }
+}
+@media screen and (max-width: 925px) {
+    .footer {
+        padding: 0 10% 4em 10%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer {
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        padding: 1em 0 6em 0;
+    }
+
+    .footer .name {
+        width: 75%;
+        padding-bottom: 1em;
+    }
+}
+
+
+
